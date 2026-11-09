@@ -82,7 +82,7 @@ The solution defaults to `MockSmsProvider`, so it runs without another process:
 }
 ```
 
-To use the supplied HTTP provider, set `UseMockProvider` to `false` and set `BaseUrl` to its address. The adapter is isolated in `ExternalSmsProvider.cs` because the exact provider request and response contract may differ. Its two private request/response records are the only types that need adjustment to match that contract.
+The exact contract and executable for the external mock SMS provider were not included with the assignment materials. Therefore, the solution uses `MockSmsProvider` by default so it can run locally in one command. `ExternalSmsProvider` demonstrates how an HTTP-based provider can be integrated once its request and response contract is available.
 
 ## Assumptions
 
